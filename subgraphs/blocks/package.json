@@ -1,0 +1,13 @@
+{
+  "name": "blocks",
+  "description": "LigerSwap Subgraph",
+  "version": "1.0.0",
+  "repository": "git@github.com:xliger/xliger-subgraph.git",
+  "author": "XLiger Lab",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ xliger/blocks subgraph.yaml"
+  }
+}
